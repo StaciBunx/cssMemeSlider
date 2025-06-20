@@ -24,7 +24,7 @@
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 650px 1fr;
+            grid-template-rows: 615px 1fr;
             row-gap: 20px;
             position: relative;
         }
@@ -32,7 +32,7 @@
         .slides {
             position: relative;
             grid-column: span 2;
-            height: 650px;
+            height: 615px;
             overflow: hidden;
         }
 
@@ -65,8 +65,14 @@
             background-image: url("./4.jpg");
         }
 
+
         .content p {
-            display: none;
+            position: absolute;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: translateY(20px);
+            transition: all 0.5s ease 0.2s;
+
         }
 
         .slider {
@@ -90,7 +96,6 @@
             padding: 20px;
             border-radius: 50%;
             position: relative;
-            transition: all 0.3s ease;
         }
 
         .controls label::after {
@@ -105,6 +110,8 @@
             height: 15px;
             border-radius: 50%;
             background: transparent;
+            transition: all 0.3s ease;
+
         }
 
         .controls label:hover::after {
@@ -131,5 +138,6 @@
         #slide2:checked~.content p:nth-of-type(2),
         #slide3:checked~.content p:nth-of-type(3),
         #slide4:checked~.content p:nth-of-type(4) {
-            display: inline;
+            transform: translateY(0);
+            opacity: 1;
         }
