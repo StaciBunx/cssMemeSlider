@@ -14,12 +14,23 @@ input[type="radio"] {
     display: none;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px 1fr;
+}
+
+.slides {
+    position: relative;
+    grid-column: span 2;
+}
+
 .slide {
     height: 650px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: absolute;
 }
 
 .slide1 {
@@ -41,10 +52,9 @@ input[type="radio"] {
 .controls label {
     cursor: pointer;
     display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
+    height: 15px;
+    width: 15px;
     position: relative;
-    width: 8px;
     border-radius: 50%;
-    border-color: white;
+    border: solid 2px lightskyblue;
 }
