@@ -7,5 +7,44 @@
 body {
     background-color: black;
     color: white;
-    margin: 20%;
+    margin: 10%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide {
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.slide1 {
+    background-image: url("./1.jpg");
+}
+
+.slide2 {
+    background-image: url("./2.jpg");
+}
+
+.slide3 {
+    background-image: url("./3.jpg");
+}
+
+.slide4 {
+    background-image: url("./4.jpg");
+}
+
+.controls label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    border-radius: 50%;
+    border-color: white;
 }
