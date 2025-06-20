@@ -7,12 +7,24 @@
 body {
     background-color: black;
     color: white;
-    margin: 10%;
+    margin: 2%;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*
 input[type="radio"] {
     display: none;
-}
+} */
 
 .wrapper {
     display: grid;
